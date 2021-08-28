@@ -1,0 +1,38 @@
+{
+  "name": "unsung-kingdom",
+  "version": "1.0.5",
+  "main": "src/index.js",
+  "author": "Laineus",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --host 0.0.0.0",
+    "build": "webpack --mode production",
+    "nwbuild": "nwbuild -p linux64,win64,osx64 -v0.46.2 -o nw/ nw/public/",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@sentry/browser": "^6.3.0",
+    "@sentry/tracing": "^6.3.0",
+    "moment": "^2.24.0",
+    "phaser": "^3.22"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nw": "^0.46.1",
+    "nw-builder": "^3.5.7",
+    "phaser-assets-webpack-plugin": "^2.0.0",
+    "tile-extrude-webpack-plugin": "^1.2.0",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "write-file-webpack-plugin": "^4.5.1"
+  }
+}
